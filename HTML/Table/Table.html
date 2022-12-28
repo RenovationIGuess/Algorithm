@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+</html lang = vi>
+<head>
+    <title>Table</title>
+    <!--<link rel = "icon" type = "image/x-ico" href = "pukec.ico" >-->
+    <style>
+        table, th, td
+        {
+            border: 1px inset black;
+            border-collapse: collapse;
+            <!--border-style: dotted;-->
+            border-spacing: 10px;
+        }
+        <!--td, th 
+        {
+            <!--background-color: white;-->
+            border-style: inset;
+            padding: 10px;
+        } -->
+        tr:nth-child(odd)
+        {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+        th:nth-child(even), td:nth-child(even)
+        {
+            background-color: rgba(150, 212, 212, 0.4);
+        } 
+        tr:hover 
+        {
+            background-color: Tomato;
+        }
+    </style>
+</head>
+<body>
+    <table style = "width: 100%; text-align: center">
+        <caption>Categories</caption>
+        <tr>
+            <th>My Games</th>
+            <th colspan = "2">Opinion</th>
+        </tr>
+        <tr>
+            <td><i>Genshin Impact</td>
+            <td>Bad</td>
+            <td>Hehe</td>
+        </tr>
+        <tr>
+            <td>League of Legends</td>
+            <td>Normal</td>
+            <td>Good</td>
+        </tr>
+    </table>
+</body>
+</html>

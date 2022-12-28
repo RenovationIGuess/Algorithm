@@ -1,0 +1,28 @@
+a:link
+{
+    color: green;
+    background-color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: pink;
+    background-color: white;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: yellow;
+    background-color: tomato;
+    text-decoration: underline;
+}
+

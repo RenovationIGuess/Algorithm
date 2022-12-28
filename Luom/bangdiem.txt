@@ -1,0 +1,8 @@
+No        Student_number      First-name                         Phone_number        Score     
+1         20200001            Nguyen_Tung_Lam                    124932745           5.00      
+2         20205349            Vu_Thanh_Trung                     293873598           5.00      
+3         20204895            Nguyen_Huu_Dukong                  2985738975          5.00      
+4         20205849            Tran_Manh_Cuong                    4378748902          5.00      
+5         20205823            Nguyen_Doan_Anh_Thai               398574908           5.00      
+6         20205947            Nguyen_Thanh_Duong                 239575094           5.00      
+7         20205848            Nguyen_Ngoc_Tu                     4385798430          5.00      

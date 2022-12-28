@@ -1,0 +1,10 @@
+Ý tưởng:
+Cách 1:
+Sử dụng thuật toán Djikstra: output e in ra là đường đi ngắn nhất.
+
+Cách 2: 
+Sử dụng BFS: output in ra số lần di chuyển ngắn nhất.
+
+- E có 2 file input và output cho thầy tiện đối chiếu ạ!
+- Output là của bài cách 1: RobotFixed
+- Output2 là của bài cách 2: BFSRobot

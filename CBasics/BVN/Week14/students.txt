@@ -1,0 +1,17 @@
+Nguyen_Tung_Lam 10
+Nguyen_Xuan_An 9
+Vu_Thanh_Trung 7
+Nguyen_Huu_Duku 8.5
+Truong_Huu_Bach 1
+Tran_Quang_Minh 2
+Tran_Nhat_Huy 5
+Nguyen_Ngoc_Tu 9
+Ha_Nhat_Quang 0
+Nghiem_Dinh_Minh 0
+Nguyen_Duy_Chien 7
+Do_Khanh_Ly 8
+Nguyen_Bao_Lam 9
+Nguyen_Doan_Anh_Thai 2
+Zik_Zak 5
+Tran_Manh_Cuong 5
+Nguyen_Thanh_Duong 7

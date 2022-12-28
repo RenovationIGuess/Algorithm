@@ -1,0 +1,63 @@
+int reversals(std::string exp) 
+{
+ // auto: lệnh khai báo biến
+ // nhưng sẽ Tự Động chuyển kiểu dữ liệu sao cho phù hợp với biến nó khai báo
+ // vd: auto A=1; => auto <=> int | auto p='o'; => auto <=> char
+ // const: lệnh "phong" hằng, khi 1 biến đc phong là hằng => ko bao giờ đổi giá trị
+
+    const auto len = exp.length();// gán + phong biến len == size chuỗi exp
+//---------------------------------
+ //B1: kt size chuỗi exp chẵn hay lẻ, nếu lẻ => kết luận luôn
+    if (len %2)
+    {return -1;} // nếu số lượng ký tự lẻ => ko thể cân bằng => trả về -1
+
+
+    std::stack<char> st;
+
+//------------------------------
+ // Bước 2: dùng vòng lặp để xóa các cặp { }
+    for(const auto c: exp) 
+    {
+     // for + const + auto = (tự chọn kiểu dữ liệu) khai báo biến c là giá trị thứ i của chuỗi exp
+     // và phong nó làm hằng
+     // lặp lại cho đến khi tất cả pt trong chuỗi exp đc khai báo
+
+        if (c == '}') 
+        {
+            if(!st.empty() && st.top() == '{') 
+            {
+                st.pop();
+                continue; 
+             // nếu c== '}' và  stack.top == '{' => tạo 1 cặp {} => xóa cả 2 
+             // sau đó break 
+            }    
+        } 
+       
+        st.push(c); 
+        // nếu c == '{' => thêm nó vào stack
+        // nếu c == '}' nhưng stack rỗng hoặc chỉ chứa pt '}' => thêm vào stack
+    }
+
+// ---------------------------------
+ //Bước 3: Kiểm tra stack có cân bằng hay ko
+           // nếu ko -> tìm số pt phải biến đổi để exp cân bằng
+    int ret = 0;
+    while( !st.empty()) 
+    {
+        const auto t1 = st.top();
+        st.pop();
+        //gán + phong hằng t1 == stack.top
+        const auto t2 = st.top();
+        st.pop();
+        //gán + phong hằng t2 == stack.top-1
+     // => sau đó xóa 2 pt stack đc phong
+
+        if(t1 != t2) 
+        {ret ++;}
+        ret++;
+        // nếu t1 và t2 giống nhau, đều == '{' hoặc == '}' => ret +1
+        // nếu t1 khác t2 => ret +2 
+    }
+
+    return ret;
+}

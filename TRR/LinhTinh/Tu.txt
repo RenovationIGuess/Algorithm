@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+int n;
+bool ok[100];
+int a[100];
+
+
+void intit()
+{
+    for(int i = 1; i <= n; ++i) a[i] = i;
+}
+
+void resit()
+{
+    for (int i = 1; i <= n; ++i) cout << a[i];
+    cout << " ";
+}
+
+void Try(int i)
+{
+    for (int j = 1; j <= n; ++j)
+    {
+        if (!ok[j])
+        {
+            a[i] = j;
+            ok[j] = true;
+            if (i == n) resit(); else Try(i + 1);
+            ok[j] = false;
+        }
+    }
+}
+int main()
+{
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        cin >> n;
+        Try(1);
+        cout << '\n';
+    }
+    return 0;
+}
